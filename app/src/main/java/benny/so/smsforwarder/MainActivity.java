@@ -121,7 +121,7 @@ public class MainActivity extends PreferenceActivity {
 
 
     private void showNotification(String contentText) {
-        Log.i(TAG, "operate notification");
+        Log.i(TAG, "show notification");
         NotificationManager mNotificationManager = (NotificationManager) getSystemService(ns);
 
         builder.setContentText(contentText);
@@ -146,10 +146,6 @@ public class MainActivity extends PreferenceActivity {
         return contentText;
     }
 
-    /**
-     * A preference value change listener that updates the preference's summary
-     * to reflect its new value.
-     */
     private Preference.OnPreferenceChangeListener sBindPreferenceSummaryToValueListener = new Preference.OnPreferenceChangeListener() {
         @Override
         public boolean onPreferenceChange(Preference preference, Object value) {

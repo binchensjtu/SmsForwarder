@@ -44,7 +44,7 @@ public class Payload {
     }
 
     public String getMailBody() {
-        String content = this.body;
+        String content = this.body + "\n" + this.subject;
         if (receiveTime != null && endTime != null) {
             content += "\n" + "From:" + DF.format(receiveTime) + " to " + DF.format(endTime);
         }
@@ -66,7 +66,7 @@ public class Payload {
                 return new Payload(subject, body);
             case MISSING_CALL:
                 name = Message.getContactName(context, bundle.getString(Constants.SENDER));
-                subject = (name == null || name.isEmpty()) ? "来自" + bundle.getString(Constants.SENDER) + "短信" : "来自" + bundle.getString(Constants.SENDER) + "(" + name + ")" + "未接来电";
+                subject = (name == null || name.isEmpty()) ? "来自" + bundle.getString(Constants.SENDER) + "未接来电" : "来自" + bundle.getString(Constants.SENDER) + "(" + name + ")" + "未接来电";
                 body = "";
                 Payload payload = new Payload(subject, body);
                 payload.setReceiveTime((Date) bundle.getSerializable(Constants.RECEIVE_TIME));
