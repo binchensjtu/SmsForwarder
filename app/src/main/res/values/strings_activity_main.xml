@@ -16,6 +16,11 @@
     <string name="pref_mail_cb_enable_on_description">已开启电子邮件转发</string>
     <string name="pref_mail_cb_enable_off_description">已关闭电子邮件转发</string>
 
+    <string name="pref_mail_cb_wifi_key">is_mail_wifi_enabled</string>
+    <string name="pref_mail_cb_wifi_title">使用Wifi通过邮件转发</string>
+    <string name="pref_mail_cb_wifi_on_description">只在连接Wifi时使用邮件转发</string>
+    <string name="pref_mail_cb_wifi_off_description">任意网络均转发</string>
+
     <string name="pref_mail_et_receive_address_key">mail_receive_address</string>
     <string name="pref_mail_et_receive_address_title">收件人邮件地址</string>
     <string name="pref_mail_et_receive_address_default">receive@example.com</string>

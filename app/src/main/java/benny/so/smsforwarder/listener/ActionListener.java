@@ -4,6 +4,8 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.util.Log;
@@ -38,12 +40,14 @@ public class ActionListener extends BroadcastReceiver {
             if (Constants.ActionType.MISSING_CALL == type && !prefs.getBoolean(context.getString(R.string.pref_other_cb_call_enable_key), false)) {
                 return;
             }
-
             if (Constants.ActionType.BATTERY == type && !prefs.getBoolean(context.getString(R.string.pref_other_cb_battery_enable_key), false)) {
                 return;
             }
+            ConnectivityManager connManager = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
+            NetworkInfo mWifi = connManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI);
 
-            if (prefs.getBoolean(context.getString(R.string.pref_mail_cb_enable_key), false)) {
+
+            if (prefs.getBoolean(context.getString(R.string.pref_mail_cb_enable_key), false) && (!(prefs.getBoolean(context.getString(R.string.pref_mail_cb_wifi_key), false)) || (mWifi.isConnected() && prefs.getBoolean(context.getString(R.string.pref_mail_cb_wifi_key), false)))) {
                 sendEmail(context, bundle, prefs);
             } else if (prefs.getBoolean(context.getString(R.string.pref_sms_cb_enable_key), false)) {
                 sendSMS(context, bundle, prefs);

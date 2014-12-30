@@ -23,14 +23,10 @@ public class SMSListener extends BroadcastReceiver {
 
     @Override
     public void onReceive(Context context, Intent intent) {
-        // ---get the SMS message passed in---
         Bundle bundle = intent.getExtras();
         if (bundle != null) {
-            // ---retrieve the SMS message received---
             Object[] pdus = (Object[]) bundle.get("pdus");
 
-            // Should perhaps parse them together, to support multi-messaging.
-            // But not sure how to do that in a nice way
             for (Object pdu : pdus) {
                 SmsMessage sms = SmsMessage.createFromPdu((byte[]) pdu);
                 String number = sms.getOriginatingAddress();
