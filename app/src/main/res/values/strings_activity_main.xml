@@ -1,0 +1,65 @@
+<resources>
+
+    <!-- General Setting -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_general_cb_enable_key">is_enabled</string>
+    <string name="pref_general_cb_enable_title">短信转发</string>
+    <string name="pref_general_cb_enable_on_description">已开启短信转发</string>
+    <string name="pref_general_cb_enable_off_description">已关闭短信转发</string>
+
+    <!-- Email Setting -->
+    <string name="pref_header_mail">电子邮件设置</string>
+
+    <string name="pref_mail_cb_enable_key">is_mail_enabled</string>
+    <string name="pref_mail_cb_enable_title">使用电子邮件转发</string>
+    <string name="pref_mail_cb_enable_on_description">已开启电子邮件转发</string>
+    <string name="pref_mail_cb_enable_off_description">已关闭电子邮件转发</string>
+
+    <string name="pref_mail_et_receive_address_key">mail_receive_address</string>
+    <string name="pref_mail_et_receive_address_title">收件人邮件地址</string>
+    <string name="pref_mail_et_receive_address_default">receive@example.com</string>
+
+    <string name="pref_mail_et_send_address_key">mail_send_address</string>
+    <string name="pref_mail_et_send_address_title">发件人邮件地址</string>
+    <string name="pref_mail_et_send_address_default">send@example.com</string>
+
+    <string name="pref_mail_et_send_smtp_key">mail_send_smtp</string>
+    <string name="pref_mail_et_send_smtp_title">发件SMTP地址</string>
+    <string name="pref_mail_et_send_smtp_default">smtp.smtp.com</string>
+
+    <string name="pref_mail_et_send_user_key">mail_send_user</string>
+    <string name="pref_mail_et_send_user_title">发件账户用户名</string>
+    <string name="pref_mail_et_send_user_default">send</string>
+
+    <string name="pref_mail_et_send_pwd_key">mail_send_pwd</string>
+    <string name="pref_mail_et_send_pwd_title">发件人邮件密码</string>
+    <string name="pref_mail_et_send_pwd_description">发送时和服务器验证</string>
+
+
+    <!-- SMS Setting -->
+    <string name="pref_header_sms">短信设置</string>
+
+    <string name="pref_sms_cb_enable_key">is_sms_enabled</string>
+    <string name="pref_sms_cb_enable_title">使用短信转发</string>
+    <string name="pref_sms_cb_enable_on_description">已开启短信转发</string>
+    <string name="pref_sms_cb_enable_off_description">已关闭短信转发</string>
+
+    <string name="pref_sms_et_receive_address_key">sms_receive_address</string>
+    <string name="pref_sms_et_receive_address_title">收件人手机号码</string>
+    <string name="pref_sms_et_receive_address_default">10086</string>
+
+    <!-- SMS Setting -->
+    <string name="pref_header_other">其他设置</string>
+
+    <string name="pref_other_cb_call_enable_key">is_missing_call_enabled</string>
+    <string name="pref_other_cb_call_enable_title">未接电话通知</string>
+    <string name="pref_other_cb_call_enable_on_description">已开启未接电话通知</string>
+    <string name="pref_other_cb_call_enable_off_description">已关闭未接电话通知</string>
+
+    <string name="pref_other_cb_battery_enable_key">is_battery_enabled</string>
+    <string name="pref_other_cb_battery_enable_title">电池电量低通知</string>
+    <string name="pref_other_cb_battery_enable_on_description">已开启电池电量低通知</string>
+    <string name="pref_other_cb_battery_enable_off_description">已关闭电池电量低通知</string>
+
+</resources>

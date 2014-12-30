@@ -1,0 +1,17 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="@string/pref_other_cb_call_enable_key"
+        android:summaryOff="@string/pref_other_cb_call_enable_off_description"
+        android:summaryOn="@string/pref_other_cb_call_enable_on_description"
+        android:title="@string/pref_other_cb_call_enable_title" />
+
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="@string/pref_other_cb_battery_enable_key"
+        android:summaryOff="@string/pref_other_cb_battery_enable_off_description"
+        android:summaryOn="@string/pref_other_cb_battery_enable_on_description"
+        android:title="@string/pref_other_cb_battery_enable_title" />
+
+</PreferenceScreen>

@@ -1,0 +1,60 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="@string/pref_mail_cb_enable_key"
+        android:summaryOff="@string/pref_mail_cb_enable_off_description"
+        android:summaryOn="@string/pref_mail_cb_enable_on_description"
+        android:title="@string/pref_mail_cb_enable_title" />
+
+    <EditTextPreference
+        android:capitalize="words"
+        android:defaultValue="@string/pref_mail_et_receive_address_default"
+        android:inputType="textCapWords"
+        android:key="@string/pref_mail_et_receive_address_key"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_mail_et_receive_address_title" />
+
+    <EditTextPreference
+        android:capitalize="words"
+        android:defaultValue="@string/pref_mail_et_send_address_default"
+        android:inputType="textCapWords"
+        android:key="@string/pref_mail_et_send_address_key"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_mail_et_send_address_title" />
+
+    <EditTextPreference
+        android:capitalize="words"
+        android:defaultValue="@string/pref_mail_et_send_smtp_default"
+        android:inputType="textCapWords"
+        android:key="@string/pref_mail_et_send_smtp_key"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_mail_et_send_smtp_title" />
+
+    <EditTextPreference
+        android:capitalize="words"
+        android:defaultValue="@string/pref_mail_et_send_user_default"
+        android:inputType="textCapWords"
+        android:key="@string/pref_mail_et_send_user_key"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_mail_et_send_user_title" />
+
+    <EditTextPreference
+        android:capitalize="words"
+        android:inputType="textPassword"
+        android:key="@string/pref_mail_et_send_pwd_key"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:summary="@string/pref_mail_et_send_pwd_description"
+        android:title="@string/pref_mail_et_send_pwd_title" />
+
+</PreferenceScreen>

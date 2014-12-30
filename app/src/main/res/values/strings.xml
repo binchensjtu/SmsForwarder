@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SmsForwarder</string>
+
+    <string name="receive_sms">benny.so.smsforwarder.receive_sms</string>
+    <string name="receive_call">benny.so.smsforwarder.receive_call</string>
+    <string name="receive_battery">benny.so.smsforwarder.receive_battery</string>
+    <string name="receive_mail_result">benny.so.smsforwarder.receive_mail_result</string>
+
+</resources>
